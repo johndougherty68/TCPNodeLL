@@ -1,2 +1,2 @@
-// process.argv will print out any command line arguments.
+// process.argv contains command line arguments.
 console.log(process.argv);

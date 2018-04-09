@@ -1,21 +1,31 @@
 // Using the require keyword lets us access all of the exports
 // in our ess.js file
-var stuffINeed = require("./ess.js");
+var stuff = require("./moduleToUse.js");
 
 // This will print everything in exports.
 console.log("--------------------------");
-console.log("ALL THE STUFF I NEED");
-console.log(stuffINeed);
+console.log("Here is what we can see");
+console.log(stuff);
 console.log("--------------------------");
 
 // These will print correctly because we imported them
-console.log("Essentials");
-console.log(stuffINeed.essentials);
+console.log("Foo");
+console.log(stuff.foo);
 console.log("--------------------------");
-console.log("Nice to Haves");
-console.log(stuffINeed.nicetohaves);
+console.log("Bar");
+console.log(stuff.bar);
 
-// This won't print anything because it wasn't exported in ess.js
+// This won't print anything
 console.log("--------------------------");
-console.log("Nonessentials");
-console.log(stuffINeed.nonessentials);
+console.log("noSee");
+console.log(stuff.noSee);
+
+// Will Say hello
+console.log("--------------------------");
+console.log("sayHello");
+console.log(stuff.sayHello("John"));
+
+// Won't Say hello
+// console.log("--------------------------");
+// console.log("sayHello");
+// console.log(stuff.cannotRunMe("John"));
