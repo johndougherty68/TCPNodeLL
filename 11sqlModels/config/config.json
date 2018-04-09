@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username": "testDBUser",
+    "password": "testDBPass",
+    "database": "testDB",
+    "host": "VAISWSHPDB01",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "instanceName": "SHPSTG01"
+    }  
+  }
+}
+
